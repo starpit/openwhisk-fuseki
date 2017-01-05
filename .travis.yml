@@ -1,5 +1,7 @@
 language: java
-install: ./init.sh
+install:
+  - curl -O https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
+  - ./init.sh
 script: ./test.sh
 env:
   global:
