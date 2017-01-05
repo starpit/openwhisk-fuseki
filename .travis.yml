@@ -3,6 +3,7 @@ jdk:
   - oraclejdk8
 install:
   - curl -O https://openwhisk.ng.bluemix.net/cli/go/download/linux/amd64/wsk
+  - chmod +x wsk
   - ./init.sh
 script: ./test.sh
 env:
