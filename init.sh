@@ -33,5 +33,6 @@ if [ $? == 1 ]; then
 fi
 
 WSK=${WSK-wsk}
+echo "Using wsk=$WSK"
 $WSK action delete fuseki 2>&1 | grep -v "resource does not exist"
 $WSK action create fuseki FusekiWhisk.jar --main FusekiWhisk --memory 512
