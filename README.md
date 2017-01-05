@@ -13,5 +13,10 @@ Fuseki](https://jena.apache.org/documentation/fuseki2/).
 
 ```
 # ./init.sh
+./init.sh
+...
+ok: created action fuseki
+
 # ./test.sh
+PASS
 ```
