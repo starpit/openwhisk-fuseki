@@ -19,3 +19,10 @@ ok: created action fuseki
 # ./test.sh
 PASS
 ```
+
+
+## Details
+
+If for some reason you wish to use a different version of Google's
+GSON library, or of the Apache Fuseki library, update the values in
+config.sh.

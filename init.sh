@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
+. ./config.sh
+
 if [ ! -d deps ]; then
-    GSON_VERSION=2.8.0
-    FUSEKI_VERSION=2.4.1
 
     FUSEKI=apache-jena-fuseki-${FUSEKI_VERSION}
 
