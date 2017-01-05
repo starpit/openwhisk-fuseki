@@ -33,5 +33,5 @@ if [ $? == 1 ]; then
 fi
 
 WSK=${WSK-wsk}
-wsk action delete fuseki 2>&1 | grep -v "resource does not exist"
-wsk action create fuseki FusekiWhisk.jar --main FusekiWhisk --memory 512
+$WSK action delete fuseki 2>&1 | grep -v "resource does not exist"
+$WSK action create fuseki FusekiWhisk.jar --main FusekiWhisk --memory 512
