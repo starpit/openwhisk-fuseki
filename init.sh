@@ -13,7 +13,8 @@ if [ ! -d deps ]; then
 	&& tar zxf apache-jena-fuseki-${FUSEKI_VERSION}.tar.gz apache-jena-fuseki-${FUSEKI_VERSION}/fuseki-server.jar \
 	&& rm ${FUSEKI}.tar.gz \
 	&& mv ${FUSEKI}/fuseki-server.jar . \
-	&& rmdir ${FUSEKI}
+	&& rmdir ${FUSEKI} \
+	&& cd ..
 
     if [ $? == 1 ]; then
 	exit 1
